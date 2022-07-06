@@ -3,6 +3,8 @@ const app = new Vue (
     {
         el:'#root',
 
+        clickedElement: '',
+
         data: {  
 
             todos: [
@@ -24,7 +26,10 @@ const app = new Vue (
         },
 
         methods: {
-            
+            whenClicked: function(){
+                clickedElement == 'd-none';
+
+            },
 
         },
 
