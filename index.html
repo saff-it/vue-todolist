@@ -22,10 +22,10 @@
                     <div class="col-12">
 
                         <ul class="list-group">
-                            <li class="list-group-item" :class="{ 'text-decoration-line-through': todos[index].done } clickedElement"
+                            <li class="list-group-item" :class="{ 'text-decoration-line-through': todos[index].done }"
                             v-for="(todo, index) in todos" >
                                 {{todos[index].text}}
-                                <span class="border border-danger fw-bold m-3 p-1" @click="whenClicked(clickedElement)">X</span>
+                                <span class="border border-danger fw-bold m-3 p-1" @click="whenClicked(index)">X</span>
                             </li>
 
 

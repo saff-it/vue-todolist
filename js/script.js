@@ -3,7 +3,6 @@ const app = new Vue (
     {
         el:'#root',
 
-        clickedElement: '',
 
         data: {  
 
@@ -26,8 +25,8 @@ const app = new Vue (
         },
 
         methods: {
-            whenClicked: function(){
-                clickedElement == 'd-none';
+            whenClicked: function(valueIndex){
+                this.todos.splice(valueIndex, 1);
 
             },
 
