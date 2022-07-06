@@ -22,7 +22,7 @@
                     <div class="col-12">
 
                         <ul class="list-group">
-                            <li class="list-group-item" v-for="(todo, index) in todos" >
+                            <li class="list-group-item" :class="{ 'text-decoration-line-through': todos[index].done }" v-for="(todo, index) in todos" >
                                 {{todos[index].text}}
 
                             </li>
