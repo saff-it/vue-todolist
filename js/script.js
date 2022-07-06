@@ -36,8 +36,7 @@ const app = new Vue (
                     this.todos.push({ text: elementToPush });
                 } else {
                     this.todoInput = '';
-                }
-                
+                }        
 
             },
 
