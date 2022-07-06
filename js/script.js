@@ -3,7 +3,7 @@ const app = new Vue (
     {
         el:'#root',
 
-
+        
         data: {  
 
             todos: [
@@ -21,12 +21,23 @@ const app = new Vue (
                 }
             ],
 
+            todoInput: '',
                        
         },
 
         methods: {
             whenClicked: function(valueIndex){
                 this.todos.splice(valueIndex, 1);
+
+            },
+
+            inpuTextPush: function(elementToPush){
+                if(!elementToPush == ''){
+                    this.todos.push({ text: elementToPush });
+                } else {
+                    this.todoInput = '';
+                }
+                
 
             },
 
