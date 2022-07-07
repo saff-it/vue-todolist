@@ -33,7 +33,9 @@ const app = new Vue (
 
             inpuTextPush: function(elementToPush){
                 if(!elementToPush == ''){
-                    this.todos.push({ text: elementToPush });
+                    this.todos.push({ text: elementToPush, done: false });
+                    this.todoInput = '';
+
                 } else {
                     this.todoInput = '';
                 }        
